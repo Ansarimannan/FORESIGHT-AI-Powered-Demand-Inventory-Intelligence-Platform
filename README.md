@@ -413,23 +413,10 @@ The current implementation has several limitations:
 - Inventory decisions should consider operational constraints and business policies in addition to model outputs.
 - Further validation on real production data would be required before operational deployment.
 
----
-
-## 19. Team
-
-### Project Lead
-
-- Saqib Khan
-
-### Contributors
-
-- Drishti Agnihotri
-- Dharsan Babu
-- Rishabh Shinghal
 
 ---
 
-## 20. Conclusion
+## 19. Conclusion
 
 FORESIGHT combines demand forecasting with inventory intelligence to support better replenishment decisions.
 
@@ -442,7 +429,7 @@ The final system provides both:
 - A **FastAPI backend** for programmatic access
 - A **Streamlit dashboard** for interactive business analysis
 
-## 21. Deployment
+## 20. Deployment
 
 FORESIGHT is deployed using separate frontend and backend services.
 
@@ -478,7 +465,7 @@ The FastAPI backend provides the forecasting and inventory-risk data consumed by
 
 The Streamlit frontend communicates with the deployed FastAPI backend through HTTPS.
 
-## 22. System Architecture
+## 21. System Architecture
 
 ### Application Workflow
 
@@ -514,7 +501,7 @@ Business Insights
 ```
 
 
-## 23. Live API
+## 22. Live API
 
 ### FastAPI Backend
 
@@ -537,7 +524,7 @@ GET /health
 ### Section 24 — Final Project Results
 
 ```markdown
-## 24. Final Project Results
+## 23. Final Project Results
 
 ### Forecasting Performance
 
