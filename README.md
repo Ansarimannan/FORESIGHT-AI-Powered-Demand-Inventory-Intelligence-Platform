@@ -439,7 +439,7 @@ The Streamlit dashboard is deployed on Streamlit Community Cloud.
 
 **Live Dashboard:**
 
-https://foresight-demand-inventory-6qvrbt6bvjhut6rskpyrwq.streamlit.app/
+https://foresight-dashboard-83ro.onrender.com
 
 The dashboard provides:
 
@@ -455,11 +455,11 @@ The FastAPI backend is deployed on Render.
 
 **Live API:**
 
-https://foresight-demand-inventory.onrender.com
+https://foresight-api-5wxt.onrender.com
 
 **API Documentation:**
 
-https://foresight-demand-inventory.onrender.com/docs
+https://foresight-api-5wxt.onrender.com/docs
 
 The FastAPI backend provides the forecasting and inventory-risk data consumed by the Streamlit dashboard.
 
