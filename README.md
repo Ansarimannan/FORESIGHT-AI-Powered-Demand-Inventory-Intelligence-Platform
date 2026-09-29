@@ -351,7 +351,7 @@ python -m venv venv
 Windows:
 
 ```bash
-venv\Scriptsctivate
+venv\Scripts\activate
 ```
 
 ### 4. Install dependencies
@@ -435,7 +435,7 @@ FORESIGHT is deployed using separate frontend and backend services.
 
 ### Streamlit Dashboard
 
-The Streamlit dashboard is deployed on Streamlit Community Cloud.
+The Streamlit dashboard is deployed on Render.
 
 **Live Dashboard:**
 
@@ -507,11 +507,11 @@ Business Insights
 
 **Base URL:**
 
-https://foresight-demand-inventory.onrender.com
+https://foresight-api-5wxt.onrender.com
 
 ### API Documentation
 
-https://foresight-demand-inventory.onrender.com/docs
+https://foresight-api-5wxt.onrender.com/docs
 
 The `/docs` endpoint provides interactive Swagger documentation for the deployed FastAPI service.
 
