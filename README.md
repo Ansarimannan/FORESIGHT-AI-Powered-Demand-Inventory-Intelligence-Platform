@@ -351,7 +351,7 @@ python -m venv venv
 Windows:
 
 ```bash
-venv\Scripts\activate
+venv\Scriptsctivate
 ```
 
 ### 4. Install dependencies
@@ -413,8 +413,8 @@ The current implementation has several limitations:
 - Inventory decisions should consider operational constraints and business policies in addition to model outputs.
 - Further validation on real production data would be required before operational deployment.
 
-
 ---
+
 
 ## 19. Conclusion
 
@@ -435,7 +435,7 @@ FORESIGHT is deployed using separate frontend and backend services.
 
 ### Streamlit Dashboard
 
-The Streamlit dashboard is deployed on Render.
+The Streamlit dashboard is deployed on Streamlit Community Cloud.
 
 **Live Dashboard:**
 
@@ -507,11 +507,11 @@ Business Insights
 
 **Base URL:**
 
-https://foresight-api-5wxt.onrender.com
+https://foresight-demand-inventory.onrender.com
 
 ### API Documentation
 
-https://foresight-api-5wxt.onrender.com/docs
+https://foresight-demand-inventory.onrender.com/docs
 
 The `/docs` endpoint provides interactive Swagger documentation for the deployed FastAPI service.
 
@@ -521,7 +521,7 @@ The `/docs` endpoint provides interactive Swagger documentation for the deployed
 GET /health
 
 
-### Section 24 — Final Project Results
+### Section 23 — Final Project Results
 
 ```markdown
 ## 23. Final Project Results

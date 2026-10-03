@@ -23,27 +23,41 @@ API_URL = "https://foresight-api-5wxt.onrender.com"
 # API Helper
 # ============================================================
 
-def api_get(endpoint):
+def api_get(endpoint, retries=3, timeout=60):
 
-    try:
-        response = requests.get(
-            f"{API_URL}{endpoint}",
-            timeout=10
-        )
+    url = f"{API_URL}{endpoint}"
 
-        response.raise_for_status()
+    for attempt in range(retries):
 
-        return response.json()
+        try:
 
-    except requests.exceptions.RequestException as e:
+            response = requests.get(
+                url,
+                timeout=timeout
+            )
 
-        st.error(
-            "Unable to connect to the FORESIGHT API."
-        )
+            response.raise_for_status()
 
-        st.code(str(e))
+            return response.json()
 
-        st.stop()
+        except requests.exceptions.RequestException as e:
+
+            if attempt < retries - 1:
+
+                import time
+
+                time.sleep(5)
+
+            else:
+
+                st.error(
+                    "Unable to connect to the FORESIGHT API. "
+                    "The backend may be waking up. Please try again."
+                )
+
+                st.code(str(e))
+
+                st.stop()
 
 
 # ============================================================
